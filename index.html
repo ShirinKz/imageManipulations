@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - ImageManipulations</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<script src="https://www.dukelearntoprogram.com//course1/common/js/image/SimpleImage.js">
+</script>
+<head>
+<h2>My mini project</h2>
+<h3>Image manipulations </h3>
+</head>
+<canvas id="cnvs"></canvas>
+<p>
+  Load image
+<input type="file" multiple="false" accept="image/*" id="img" onchange="loadImage()">
+</p>
+<p>
+  Choose Filter
+  <br>
+ <input type="button" value="Grayscale" id="grscl" onclick="makeGray()">
+  <input type="button" value="Red" id="rd" onclick="makeRed()">
+   <input type="button" value="Rainbow" id="rnbw" onclick="makeRainbow()">
+  <input type="button" value="Blur" id="rnbw" onclick="makeBlur()">
+  <br>
+  <input type="button" value="Reset image" id="reset"onclick="resetImage()">
+</p>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>
